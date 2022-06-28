@@ -93,7 +93,7 @@ def es_cif(doi):
     elif first_chr not in 'CDFGJNRUV':
         return False
 
-    return control == str(res) or control == table[res]
+    return control in [str(res), table[res]]
 
 
 @validator
